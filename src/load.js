@@ -5,6 +5,7 @@ const loadPage = () => {
 
 const loadNav = () => {
     const container = document.getElementById("content");
+    container.textContent = "";
     const nav = document.createElement('div');
     const logo = document.createElement('div');
     const ul = document.createElement('ul');
@@ -49,7 +50,7 @@ const loadMain = () => {
     const menuButtons = document.createElement('div');
     menuButtons.classList.add("menu-buttons");
     const ul = document.createElement('ul');
-    const items = ["Cocktails", "Lunch", "Dinner", "Dessert"];
+    const items = ["Cocktails", "Lunch", "Dinner"];
     for(let item of items){
         const li = document.createElement('li');
         li.textContent = item;

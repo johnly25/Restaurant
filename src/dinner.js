@@ -1,4 +1,4 @@
-const loadLunch = () => {
+const loadDinner = () => {
     const content = document.getElementById("content");
     const container = document.createElement("div");
     const border = document.createElement("div");
@@ -8,15 +8,15 @@ const loadLunch = () => {
     border.classList.add("border");
     container.classList.add("menu-container");
     title.classList.add("title");
-    menu.classList.add("lunch");
-    title.textContent = "Lunch"
+    menu.classList.add("dinner");
+    title.textContent = "Dinner"
 
     menu.append(title);
-    menu = addItem(menu, "Chicken ", "25", "Chicken");
-    menu = addItem(menu, "Chicken ", "25", "Chicken");
-    menu = addItem(menu, "Chicken ", "25", "Chicken");
-    menu = addItem(menu, "Chicken ", "25", "Chicken");
-    menu = addItem(menu, "Chicken ", "25", "Chicken");
+    menu = addItem(menu, "Steak ", "25", "Beef");
+    menu = addItem(menu, "Steak ", "25", "Beef");
+    menu = addItem(menu, "Steak ", "25", "Beef");
+    menu = addItem(menu, "Steak ", "25", "Beef");
+    menu = addItem(menu, "Steak ", "25", "Beef");
 
 
     border.append(menu);
@@ -45,4 +45,4 @@ function addItem(menu, foodText, priceText, ingredientsText) {
     return menu;
 }
 
-export default loadLunch;
+export default loadDinner;
